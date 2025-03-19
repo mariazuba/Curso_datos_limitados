@@ -1,0 +1,161 @@
+---
+title: "Evaluación de pesquerías con datos limitados"
+output: html_document
+date: "2025-03-19"
+---
+
+# Evaluación de Pesquerías con Datos Limitados
+
+## Antecedentes
+
+### Proceso de Evaluación de Pesquerías
+
+La evaluación de pesquerías es un proceso que incluye la interacción de diferentes componentes. Las decisiones tomadas en la gestión afectan el comportamiento de las flotas, que a su vez tienen un impacto en la biología de los individuos. Esta información se procesa mediante modelos de dinámica poblacional, cuyas estimaciones son la principal fuente de información para la gestión pesquera.
+
+Históricamente, la evaluación de recursos pesqueros ha evolucionado con el desarrollo de modelos matemáticos y estadísticos. Actualmente, estos modelos son fundamentales para interpretar la dinámica de las poblaciones de peces y definir estrategias de gestión. Si bien todos los modelos son aproximaciones y, por lo tanto, imperfectos, algunos han demostrado ser herramientas útiles para la gestión sostenible de las pesquerías.
+
+La evaluación de recursos pesqueros debe contar con la mayor cantidad de información posible, manteniendo un equilibrio entre la precisión de los datos y la aplicabilidad de los resultados. En este sentido, el modelado probabilístico de poblaciones de peces ha permitido abordar la incertidumbre inherente a los sistemas ecológicos y pesqueros.
+
+## Antecedentes Históricos
+
+### Desarrollo de Modelos de Dinámica Poblacional
+
+El primer antecedente se remonta al estudio de la dinámica poblacional. El modelo malthusiano (1759) plantea que el cambio en el tamaño de la población es proporcional al número de individuos existentes en un momento determinado. Su solución es la función de crecimiento exponencial, aún utilizada en ecología.
+
+Cien años después, Verhulst desarrolló el modelo logístico, que introduce el concepto de capacidad de carga, describiendo el crecimiento de una población hasta alcanzar un equilibrio. En el contexto pesquero, en 1860 se realizaron los primeros estudios sobre poblaciones explotadas y en 1889 se introdujeron los métodos de estimación de edad a partir del análisis de estructuras calcificadas.
+
+### Aportes Claves a la Ciencia Pesquera
+
+En 1926, Baranov formalizó la distinción entre mortalidad natural y mortalidad por pesca. Su ecuación de captura sigue siendo la más utilizada en modelos de evaluación pesquera. Aunque fue publicada en 1926, su aplicación efectiva no ocurrió hasta la década de 1940 debido a barreras idiomáticas.
+
+En 1918, Huntsman propuso un modelo de red trófica basado en diagramas piramidales. En la misma época, D'Ancona observó un aumento en la población de tiburones en el Mar Adriático tras la Primera Guerra Mundial, atribuyéndolo a cambios en la dinámica trófica. Su suegro, el matemático Vito Volterra, formalizó estas observaciones en ecuaciones matemáticas.
+
+### Crisis en la Evaluación Pesquera
+
+El colapso de la anchoveta peruana en 1974 y del bacalao en Terranova en 1992 evidenciaron fallos en los modelos tradicionales de evaluación pesquera, que no lograron predecir estos eventos. Estos colapsos se debieron a una combinación de factores técnicos, falta de herramientas de evaluación y errores metodológicos, incluyendo la omisión de la incertidumbre en los modelos.
+
+### Incorporación de la Incertidumbre en la Evaluación Pesquera
+
+Desde entonces, se ha promovido el desarrollo de modelos probabilísticos que incorporan la incertidumbre. Este cambio metodológico responde a una tendencia general en la ciencia, donde la teoría de la probabilidad ha proporcionado un marco sólido para la toma de decisiones bajo incertidumbre.
+
+Ray Hilborn (1996) predijo que el modelado bayesiano sería el futuro de la evaluación pesquera, debido a su flexibilidad y transparencia en el manejo de la incertidumbre.
+
+### Incertidumbre en la Evaluación de Pesquerías
+
+La incertidumbre es un elemento clave en la evaluación de pesquerías, especialmente al proporcionar asesoramiento científico para la gestión. Esta incertidumbre puede clasificarse en dos dimensiones:
+
+1. **Incertidumbre en los valores de entrada (inputs)**:
+   - Variabilidad en los datos de captura y esfuerzo pesquero.
+   - Incertidumbre en la estimación de parámetros biológicos (crecimiento, mortalidad, reclutamiento).
+
+2. **Incertidumbre del método de evaluación**:
+   - Sensibilidad de los modelos a diferentes supuestos.
+   - Dependencia de la disponibilidad de datos.
+
+### Soluciones para Reducir la Incertidumbre
+
+Una estrategia viable para mitigar la incertidumbre es mejorar la precisión de los valores de entrada mediante investigación dirigida. Además, la aplicación de enfoques bayesianos permite evaluar diferentes escenarios y proporcionar estimaciones más robustas para la toma de decisiones en la gestión pesquera.
+
+Información Limitada en la Evaluación Pesquera
+
+Dimensiones de la Información Disponible
+
+Cuando se trabaja con datos limitados (data-limited), es importante considerar los siguientes aspectos:
+
+Información disponible:
+
+- Cantidad de datos recopilados.
+
+- Calidad de los datos.
+
+- Cobertura temporal y espacial.
+
+
+Recursos disponibles:
+
+- Tiempo para la evaluación.
+
+- Financiación.
+
+- Disponibilidad de evaluadores.
+
+- Número de stocks a evaluar.
+
+- Necesidades de gestión.
+
+La incertidumbre está presente en ambas dimensiones y afecta la confiabilidad de las evaluaciones. Además, las condiciones para implementar modelos varían localmente según las características de cada recurso pesquero y la disponibilidad de información.
+
+Métodos para Evaluación con Información Limitada
+
+Existen diversas metodologías diseñadas para evaluar pesquerías con datos limitados. A continuación, se presentan dos métodos utilizados en diferentes escenarios:
+
+1. SPICT (Surplus Production Model in Continuous Time)
+
+Este modelo de producción excedentaria en tiempo continuo permite estimar la biomasa y el estado del stock con base en datos limitados. Requiere la siguiente información:
+
+Datos requeridos:
+
+- Serie temporal representativa de capturas de la especie.
+
+- Serie temporal representativa de la biomasa de la especie (basada en campañas científicas).
+
+La estimación puede realizarse utilizando más de un índice de biomasa, por ejemplo, cuando las campañas científicas se realizan más de una vez al año o cuando hay series temporales tanto de CPUE comercial como de campañas científicas.
+
+Los índices de biomasa deben estar en términos de biomasa (no en número de individuos) y ser representativos de la biomasa explotable del stock (Exploitable Stock Biomass, ESB).
+
+2. LBSPR (Length-Based Spawning Potential Ratio)
+
+Este método utiliza la distribución de tallas en la captura para estimar si la pesquería es sostenible, basándose en la probabilidad de obtener una determinada distribución de tallas dada la madurez, la mortalidad natural y el crecimiento de la especie.
+
+Datos requeridos:
+
+- Distribución de tallas en la captura.
+
+- Madurez a la talla.
+
+- Mortalidad natural (M).
+
+- Parámetros de crecimiento de Von Bertalanffy.
+
+- Parámetros de la relación peso-longitud (W = aL^b), que suelen estar disponibles en bases de datos como FishBase.
+
+
+Más información disponible en: LBSPR
+
+
+Los métodos basados en el tamaño y los modelos de producción excedentaria han sido ampliamente utilizados para comprender la dinámica poblacional en pesquerías. ICES ha desarrollado métodos para establecer puntos de referencia proxy de RMS (Rendimiento Máximo Sostenible) para poblaciones de peces con datos limitados (categorías 3 y 4).
+
+Con el fin de proporcionar acceso abierto a las herramientas y modelos desarrollados por ICES y otros colaboradores, se ha creado un repositorio que alberga los siguientes modelos matemático-estadísticos: Indicadores basados en la longitud (LBI), Relación de Potencial de Desove basada en la longitud (LBSPR) y Mortalidad basada en la longitud media (MLZ). Estos métodos están diseñados específicamente para evaluar el estado de las poblaciones de peces utilizando datos de longitud y parámetros biológicos. Estas herramientas permiten calcular indicadores proxy de referencia para el RMS.
+
+Además, el repositorio incluye enlaces a aplicaciones interactivas (Shiny Apps) que facilitan la ejecución de los modelos y la interpretación de los resultados, como se detalla a continuación:
+
+Indicadores basados en la longitud (LBI; Froese, 2004; ICES, 2015)
+El método LBI evalúa las poblaciones en función de objetivos de conservación, sostenibilidad, optimización del rendimiento y rendimiento máximo sostenible (RMS). Para ello, genera un conjunto de indicadores a partir de la composición por tallas de las capturas/desembarques, utilizando la proporción por talla en la captura (año único), la talla de primera captura en la pesquería (estimada a partir de datos de frecuencia de tallas) y parámetros biológicos (Linf y talla de madurez).
+
+Aplicación: LBIndicator Shiny App
+Conjuntos de datos, ejemplos y scripts en R: Repositorio de ICES
+Evaluación del estado de las poblaciones mediante la Relación de Potencial de Desove basada en la longitud (LBSPR; Hordyk et al., 2015)
+El método LBSPR evalúa el estado de la población a través de la Relación de Potencial de Desove (SPR), definida como la proporción de Biomasa Desovante por Recluta (SBPR) en una población explotada con respecto a la SBPR en una población virgen (sin explotación). Utiliza datos de composición por tallas de la pesquería y estimaciones de parámetros de historia de vida.
+
+Aplicación: LBSPR
+Guía del usuario: LBSPR en CRAN
+Conjuntos de datos, ejemplos y scripts en R: Repositorio de LBSPR
+Mortalidad basada en la longitud media (MLZ; Gedamke y Hoenig, 2006)
+El método MLZ, propuesto por Gedamke y Hoenig (2006), permite la estimación de la mortalidad total utilizando series temporales de longitud media (> selección completa) en la captura, la longitud de selección completa (estimada a partir de datos de frecuencia de tallas de captura) y parámetros de crecimiento. A partir de una serie temporal de observaciones de longitud media, el estimador de Gedamke-Hoenig proporciona estimaciones periódicas de Z y los años correspondientes en los que se producen cambios en la mortalidad.
+
+Aplicación: No hay una aplicación web disponible
+Guía del usuario: MLZ en CRAN
+Conjuntos de datos, ejemplos y scripts en R: Repositorio de ICES
+Modelo estocástico de producción excedentaria en tiempo continuo (SPiCT; Pedersen y Berg, 2017)
+SPiCT modela explícitamente la biomasa y la dinámica de la pesca como procesos estocásticos en un marco de estado-espacio. Se formula como un modelo en tiempo continuo para representar el comportamiento estacional de la pesca e incorporar datos de captura e índices a nivel subanual. Uno de los insumos más importantes para ajustar SPiCT es la serie temporal de biomasa de captura (en peso). Además, SPiCT requiere al menos un índice de biomasa para calibrar la biomasa poblacional y estimar los parámetros del modelo. Una ventaja clave de SPiCT es que permite el uso de múltiples índices de biomasa con diferentes series temporales, además de la serie temporal de captura.
+
+Aplicación: Código fuente de SPiCT
+Manual de la aplicación Shiny: Descargar manual
+Guía del usuario: Manuales oficiales de SPiCT
+Conjuntos de datos, ejemplos y scripts en R: Repositorio de datos de SPiCT
+Aplicación Shiny alternativa: SPiCT GUI
+Guía de implementación para modelos con datos limitados
+Documento reproducible que proporciona una guía de implementación para los cuatro modelos mencionados anteriormente: Indicadores basados en la longitud (LBI), Relación de Potencial de Desove basada en la longitud (LBSPR), Estimadores de mortalidad basados en la longitud media (MLZ) y el modelo estocástico de producción excedentaria en tiempo continuo (SPiCT).
+
+Guía: Implementación de modelos con datos limitados
+
